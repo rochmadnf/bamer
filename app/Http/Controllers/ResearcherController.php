@@ -25,6 +25,12 @@ class ResearcherController extends Controller
                 "expertise"      => "Matematika Terapan",
                 "google_scholar" => "https://scholar.google.com/citations?hl=en&user=WDQfWIwAAAAJ",
             ],
+            [
+                "name" => "Iman Al Fajri, S.Si., M.Si",
+                "avatar" => "MPWRULEgaVgVoHoPQESJI8M9Ik7C9d0t.jpg",
+                "expertise" => "Matematika Terapan",
+                "google_scholar" => "https://scholar.google.com/citations?user=dGEJDOoAAAAJ&hl=en&oi=ao"
+            ]
 
         ];
 

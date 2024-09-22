@@ -106,7 +106,7 @@ class TrainingOnionDataSeeder extends Seeder
                 "kotoran" => 0,
                 "kebusukan" => 0,
                 "kerusakan" => 0,
-                "kadar_air" => 78.177,                
+                "kadar_air" => 78.177,
                 "diameter" => 2.2135,
                 "mutu_class" => 2,
             ],
@@ -255,7 +255,7 @@ class TrainingOnionDataSeeder extends Seeder
                 "diameter" => 2.103,
                 "mutu_class" => 1,
             ],
-            
+
             // sidondo
             //1
             [
@@ -346,12 +346,12 @@ class TrainingOnionDataSeeder extends Seeder
                 "kotoran" => 0,
                 "kebusukan" => 0,
                 "kerusakan" => 0,
-                "kadar_air" => 77,034,
-                "diameter" => 1,543,
+                "kadar_air" => 77.034,
+                "diameter" => 1.543,
                 "mutu_class" => 1,
             ],
         ]);
 
-        $data->each(fn ($item) => NaiveBayesTrain::create($item));
+        $data->each(fn($item) => NaiveBayesTrain::create($item));
     }
 }

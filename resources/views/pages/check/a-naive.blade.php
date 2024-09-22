@@ -1,10 +1,13 @@
 @extends('app')
 
 @section('content')
-    <p class="text-sm text-justify text-gray-900 -mt-4">Silakan jawab pertanyaan dibawah ini untuk mengetahui
+    <p class="text-sm text-justify text-gray-900 -mt-4">Silakan pilih metode pengecekan dan jawab pertanyaan untuk
+        mengetahui
         <strong>Mutu Bawang Merah</strong>
         Anda.
     </p>
+
+    <x-check-tabs />
 
     <form id="formCheck" class="mt-6 shadow-0 shadow-slate-300 py-4 px-4 rounded-md bg-white">
         <div class="mb-4">
@@ -39,7 +42,7 @@
                 <option selected disabled>Simpan Kering</option>
             </select>
         </div>
-        
+
         <div class="mb-4">
             <label class="text-sm block mb-2" for="kotoran">Apakah terdapat kotoran pada Bawang Merah?</label>
             <select id="kotoran" name="kotoran" disabled

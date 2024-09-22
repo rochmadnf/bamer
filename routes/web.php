@@ -9,7 +9,7 @@ Route::get('/', function () {
     return view('pages.home')->withPageTitle(false);
 })->name('home');
 
-Route::get('/app-info', fn () => view('pages.app-info')->withPageTitle('Info Aplikasi'))->name('appInfo');
+Route::get('/app-info', fn() => view('pages.app-info')->withPageTitle('Info Aplikasi'))->name('appInfo');
 Route::get('/standard-mutu', [StandardMutuController::class, 'index'])->name('standardMutu');
 
 Route::prefix('webview')->group(function () {
@@ -18,7 +18,7 @@ Route::prefix('webview')->group(function () {
 
 Route::controller(CheckMutuController::class)->prefix('check')->group(function () {
     Route::get('/', 'index')->name('check');
-    Route::get('/{algo}', 'method')->whereIn('algo', ['naive', 'knn']);
+    Route::get('/{algo}', 'method')->whereIn('algo', ['naive', 'knn'])->name('algo');
 });
 
 // Route::get()

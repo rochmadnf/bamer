@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 class CheckMutuController extends Controller
 {
-    public function index(){
-        return view('pages.check')->withPageTitle('Uji Data');
+    public function index()
+    {
+        return redirect()->route('algo', ['algo' => 'naive']);
     }
 
-    public function method($algo){
+    public function method($algo)
+    {
         return view('pages.check.a-' . $algo)->withPageTitle('Uji Data');
     }
 }
